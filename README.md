@@ -125,49 +125,8 @@ javac -d ../bin Conexao.java Principal.java bean/*.java model/*.java controller/
 
 ```bash
 # No diretório LojaJogos
-ava -cp .:postgresql-42.6.0.jar:bin Principal
+java -cp .:postgresql-42.6.0.jar:bin Principal
 ```
-
-### 5. Navegação no Menu
-
-O sistema possui um menu interativo com 37 opções organizadas por categoria:
-- Opções 1-4: Operações com Jogos
-- Opções 5-8: Operações com Arcades
-- Opções 9-12: Operações com Tabuleiros
-- Opções 13-16: Operações com Carteados
-- Opções 17-20: Operações com RPGs
-- Opções 21-24: Operações com Salas
-- Opções 25-28: Operações com Clientes
-- Opções 29-32: Operações com Usos
-- Opções 33-34: Consultas com JOIN
-- Opções 35-37: Consultas com Agregação
-- Opção 0: Sair
-
-## Exemplo de Uso
-
-### Cadastrar um novo jogo:
-1. Escolha opção 1 (Inserir novo Jogo)
-2. Informe os dados solicitados (id, nome, gênero, idade mínima, número de jogadores)
-
-### Especializar o jogo como Arcade:
-1. Escolha opção 5 (Inserir novo Arcade)
-2. Informe o ID do jogo criado anteriormente
-3. Informe a quantidade de tickets
-
-### Registrar uso de um jogo por um cliente:
-1. Escolha opção 29 (Inserir novo Uso)
-2. Informe o ID do jogo, CPF do cliente, datas/horas e preço
-
-### Ver relatório de receita:
-1. Escolha opção 35 (Receita Total por Jogo)
-2. O sistema mostrará receita e número de usos por jogo
-
-## Observações Importantes
-
-- **Ordem de Inserção**: Para inserir Arcades, Tabuleiros, Carteados ou RPGs, primeiro insira o jogo correspondente na tabela Jogos
-- **Datas**: Use formato AAAA-MM-DD para datas e AAAA-MM-DD HH:MM:SS para timestamps
-- **Valores NULL**: Digite 0 quando o sistema perguntar por valores opcionais que você deseja deixar como NULL
-- **CPF**: Use 11 dígitos para o CPF dos clientes
 
 ## Tecnologias Utilizadas
 
